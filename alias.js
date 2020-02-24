@@ -3,7 +3,18 @@ window.onload = function () {
     if ((window.navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey) && e.key === "s") {
       e.preventDefault();
       // Process the event here (such as click on submit button)
-      console.log('ah ha!')
+      const buttons = document.getElementsByTagName('button')
+      const saveButton = [...buttons].find(el => el.innerHTML === "Save")
+      try {
+        saveButton.click()
+      } catch (e) {
+        // The event listener actually hears this event twice...
+        // so, it'll also try to click twice
+        // the save button's gone and replaced with a loading icon
+        // but it works it's just loading, don't throw an error :) 
+      }
+      
+      
     }
   }, false);
 }
