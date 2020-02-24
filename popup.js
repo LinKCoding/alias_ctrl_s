@@ -1,8 +1,8 @@
-chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+chrome.tabs.query({ active: true }, function (tabs) {
   if (tabs[0].url.includes('https://www.codecademy')) {
     chrome.tabs.executeScript(tabs[0].id, {
       code: `
-
+      console.log('hi')
       document.addEventListener("keydown", function (e) {
         console.log('testing')
         if ((window.navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey) && e.keyCode == 83) {

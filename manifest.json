@@ -11,8 +11,15 @@
     "scripts": [
       "background.js"
     ],
-    "persistent": true
+    "persistent": false
   },
+  "content_scripts": [
+    {
+      "matches": ["https://www.codecademy.com/*"],
+      "js": ["alias.js"],
+      "run_at": "document_end"
+    }
+  ],
   "page_action": {
     "default_popup": "popup.html",
     "default_icon": {
