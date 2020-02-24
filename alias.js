@@ -4,13 +4,13 @@ window.onload = function () {
       e.preventDefault();
       
       const buttons = document.getElementsByTagName('button')
-      const saveButton = [...buttons].find(el => el.innerHTML === "Save")
+      const saveButton = [...buttons].find(el => el.innerHTML === "Save" || el.innerHTML === "Run")
       try {
         saveButton.click()
       } catch (e) {
         // The event listener actually hears this event twice...
         // so, it'll also try to click twice
-        // the save button's gone and replaced with a loading icon
+        // the save/run button's gone and replaced with a loading icon
         // but it works it's just loading, don't throw an error :) 
       }
       
