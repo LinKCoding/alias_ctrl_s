@@ -1,7 +1,7 @@
 {
   "name": "Alias Keys on CC",
   "version": "1.0",
-  "description": "Stop making ctrl + s try to save the file...",
+  "description": "Stop making cmd + s try to save the file...",
   "permissions": [
     "activeTab",
     "declarativeContent",
