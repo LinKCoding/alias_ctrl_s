@@ -1,12 +1,10 @@
 {
-  "name": "Check Learner Code",
+  "name": "Alias Keys on CC",
   "version": "1.0",
-  "description": "Quickly access a learner's code without the hassle of doing it normally!",
+  "description": "Stop making ctrl + s try to save the file...",
   "permissions": [
     "activeTab",
     "declarativeContent",
-    "storage",
-    "cookies",
     "https://www.codecademy.com/*"
   ],
   "background": {
