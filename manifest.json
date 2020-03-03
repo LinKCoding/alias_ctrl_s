@@ -5,7 +5,8 @@
   "permissions": [
     "activeTab",
     "declarativeContent",
-    "https://www.codecademy.com/*"
+    "https://www.codecademy.com/*",
+    "https://author.codecademy.com/*"
   ],
   "background": {
     "scripts": [
@@ -15,7 +16,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://www.codecademy.com/*"],
+      "matches": ["https://www.codecademy.com/*", "https://author.codecademy.com/*"],
       "js": ["alias.js"],
       "run_at": "document_end"
     }

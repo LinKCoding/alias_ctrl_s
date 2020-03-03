@@ -1,4 +1,7 @@
+
+
 window.onload = function () {
+
   window.addEventListener("keydown", function (e) {
     
     if ((window.navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey) && e.key === "s") {
